@@ -1,0 +1,124 @@
+
+/* Pengaturan dasar halaman */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fff5f8;
+    color: #493640;
+    line-height: 1.7;
+}
+
+/* Bagian judul */
+header {
+    background: linear-gradient(135deg, #f8c8dc, #fce4ec);
+    text-align: center;
+    padding: 55px 20px;
+}
+
+header h1 {
+    margin: 0;
+    color: #9b416b;
+    font-size: 36px;
+}
+
+header p {
+    margin-bottom: 0;
+}
+
+/* Menu navigasi */
+nav {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 16px 10px;
+    box-shadow: 0 3px 10px #e8cbd7;
+}
+
+nav a {
+    color: #a34873;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #d66c9c;
+}
+
+/* Isi utama */
+main {
+    max-width: 850px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+section {
+    background-color: #ffffff;
+    margin-bottom: 24px;
+    padding: 28px;
+    border-radius: 18px;
+    box-shadow: 0 4px 15px #f0dce5;
+    scroll-margin-top: 20px;
+}
+
+section h2 {
+    color: #b34f7e;
+    border-bottom: 2px solid #f6ccdd;
+    padding-bottom: 8px;
+}
+
+article {
+    background-color: #fff5f8;
+    padding: 15px;
+    border-radius: 12px;
+}
+
+#tentang img {
+    display: block;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #f4c3d7;
+    margin: 20px auto;
+}
+
+ul {
+    padding-left: 24px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+/* Bagian bawah halaman */
+footer {
+    background-color: #f4c3d7;
+    color: #713b54;
+    text-align: center;
+    padding: 18px;
+    margin-top: 35px;
+}
+
+/* Tampilan pada layar kecil */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 28px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px;
+    }
+
+    section {
+        padding: 20px;
+    }
+}
