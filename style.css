@@ -1,123 +1,217 @@
 
-/* Pengaturan dasar halaman */
+/* =========================================
+   1. PENGATURAN DASAR HALAMAN
+   ========================================= */
+
+/* Semua elemen menggunakan perhitungan ukuran
+   yang lebih mudah agar padding tidak menambah
+   ukuran elemen secara tidak terduga. */
 * {
     box-sizing: border-box;
 }
 
+/* Membuat perpindahan ke bagian halaman
+   lain menjadi halus saat menu diklik. */
 html {
     scroll-behavior: smooth;
 }
 
+/* Mengatur tampilan dasar seluruh halaman. */
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #fff5f8;
-    color: #493640;
-    line-height: 1.7;
+    margin: 0; /* Menghilangkan jarak bawaan browser */
+    font-family: Arial, sans-serif; /* Jenis huruf */
+    background-color: #fff5f8; /* Latar pink sangat muda */
+    color: #493640; /* Warna teks cokelat keunguan */
+    line-height: 1.7; /* Jarak antarbaris teks */
 }
 
-/* Bagian judul */
+
+/* =========================================
+   2. BAGIAN JUDUL HALAMAN (HEADER)
+   ========================================= */
+
+/* Mengatur latar, posisi teks, dan jarak
+   pada bagian atas halaman. */
 header {
     background: linear-gradient(135deg, #f8c8dc, #fce4ec);
-    text-align: center;
-    padding: 55px 20px;
+    /* Gradasi dua warna pink */
+    text-align: center; /* Teks berada di tengah */
+    padding: 55px 20px; /* Jarak dalam header */
 }
 
+/* Mengatur judul utama halaman profil. */
 header h1 {
-    margin: 0;
-    color: #9b416b;
-    font-size: 36px;
+    margin: 0; /* Menghilangkan jarak luar */
+    color: #9b416b; /* Warna judul */
+    font-size: 36px; /* Ukuran huruf judul */
 }
 
+/* Menghilangkan jarak bawah paragraf header. */
 header p {
     margin-bottom: 0;
 }
 
-/* Menu navigasi */
+
+/* =========================================
+   3. MENU NAVIGASI (NAV)
+   ========================================= */
+
+/* Mengatur tampilan menu navigasi. */
 nav {
-    background-color: #ffffff;
-    text-align: center;
-    padding: 16px 10px;
+    background-color: #ffffff; /* Latar putih */
+    text-align: center; /* Menu berada di tengah */
+    padding: 16px 10px; /* Jarak dalam menu */
     box-shadow: 0 3px 10px #e8cbd7;
+    /* Bayangan halus di bawah menu */
 }
 
+/* Mengatur tampilan tautan menu. */
 nav a {
-    color: #a34873;
-    text-decoration: none;
-    margin: 0 10px;
-    font-weight: bold;
+    color: #a34873; /* Warna tulisan menu */
+    text-decoration: none; /* Menghilangkan garis bawah */
+    margin: 0 10px; /* Jarak antar-menu */
+    font-weight: bold; /* Tulisan menjadi tebal */
 }
 
+/* Mengubah warna menu saat kursor diarahkan
+   ke tautan atau link. */
 nav a:hover {
     color: #d66c9c;
 }
 
-/* Isi utama */
+
+/* =========================================
+   4. BAGIAN ISI UTAMA (MAIN)
+   ========================================= */
+
+/* Mengatur lebar dan posisi isi utama. */
 main {
-    max-width: 850px;
-    margin: 30px auto;
-    padding: 0 20px;
+    max-width: 850px; /* Lebar maksimum isi */
+    margin: 30px auto; /* Posisi di tengah halaman */
+    padding: 0 20px; /* Jarak kiri dan kanan */
 }
 
+/* Mengatur tampilan setiap bagian profil. */
 section {
-    background-color: #ffffff;
-    margin-bottom: 24px;
-    padding: 28px;
-    border-radius: 18px;
+    background-color: #ffffff; /* Latar putih */
+    margin-bottom: 24px; /* Jarak antarbagian */
+    padding: 28px; /* Jarak isi dari tepi */
+    border-radius: 18px; /* Membuat sudut membulat */
     box-shadow: 0 4px 15px #f0dce5;
+    /* Memberikan bayangan lembut */
     scroll-margin-top: 20px;
+    /* Jarak saat berpindah ke bagian melalui menu */
 }
 
+/* Mengatur judul setiap bagian profil. */
 section h2 {
-    color: #b34f7e;
+    color: #b34f7e; /* Warna judul bagian */
     border-bottom: 2px solid #f6ccdd;
-    padding-bottom: 8px;
+    /* Garis pink di bawah judul */
+    padding-bottom: 8px; /* Jarak judul ke garis */
 }
 
+
+/* =========================================
+   5. BAGIAN PENDIDIKAN (ARTICLE)
+   ========================================= */
+
+/* Memberikan tampilan khusus pada informasi
+   pendidikan yang berada di dalam article. */
 article {
-    background-color: #fff5f8;
-    padding: 15px;
-    border-radius: 12px;
+    background-color: #fff5f8; /* Latar pink muda */
+    padding: 15px; /* Jarak isi dari tepi */
+    border-radius: 12px; /* Sudut membulat */
 }
 
+
+/* =========================================
+   6. FOTO PROFIL
+   ========================================= */
+
+/* Mengatur foto yang berada pada bagian
+   dengan ID "tentang". */
 #tentang img {
-    display: block;
-    width: 150px;
-    height: 150px;
+    display: block; /* Memudahkan pengaturan posisi */
+    width: 150px; /* Lebar foto */
+    height: 150px; /* Tinggi foto */
     object-fit: cover;
-    border-radius: 50%;
+    /* Foto memenuhi area tanpa terlihat gepeng */
+    border-radius: 50%; /* Membuat foto bulat */
     border: 4px solid #f4c3d7;
-    margin: 20px auto;
+    /* Bingkai foto berwarna pink */
+    margin: 20px auto; /* Memposisikan foto di tengah */
 }
 
+
+/* =========================================
+   7. DAFTAR KEAHLIAN
+   ========================================= */
+
+/* Mengatur jarak daftar dari sisi kiri. */
 ul {
     padding-left: 24px;
 }
 
+/* Memberikan jarak antar-item daftar. */
 li {
     margin-bottom: 8px;
 }
 
-/* Bagian bawah halaman */
-footer {
-    background-color: #f4c3d7;
-    color: #713b54;
-    text-align: center;
-    padding: 18px;
-    margin-top: 35px;
+/* =========================================
+   8. BAGIAN KONTAK
+   ========================================= */
+   
+/* Tampilan tautan email pada bagian kontak */
+#kontak a {
+    color: #a34873;
+    font-weight: bold;
+    text-decoration: none;
 }
 
-/* Tampilan pada layar kecil */
+/* Efek saat kursor diarahkan ke email */
+#kontak a:hover {
+    color: #d66c9c;
+    text-decoration: underline;
+}
+
+
+/* =========================================
+   8. BAGIAN BAWAH HALAMAN (FOOTER)
+   ========================================= */
+
+/* Mengatur tampilan bagian paling bawah halaman. */
+footer {
+    background-color: #f4c3d7; /* Latar pink */
+    color: #713b54; /* Warna tulisan */
+    text-align: center; /* Teks berada di tengah */
+    padding: 18px; /* Jarak dalam footer */
+    margin-top: 35px; /* Jarak dari isi utama */
+}
+
+
+/* =========================================
+   9. TAMPILAN LAYAR KECIL (RESPONSIVE)
+   ========================================= */
+
+/* Aturan berikut berlaku ketika lebar layar
+   600 piksel atau kurang, misalnya pada HP. */
 @media (max-width: 600px) {
+
+    /* Mengecilkan judul agar sesuai layar HP. */
     header h1 {
         font-size: 28px;
     }
 
+    /* Mengatur menu agar lebih nyaman
+       dilihat dan digunakan di layar kecil. */
     nav a {
         display: inline-block;
         margin: 5px;
     }
 
+    /* Mengurangi jarak dalam setiap bagian
+       agar isi tidak terlalu sempit di HP. */
     section {
         padding: 20px;
     }
